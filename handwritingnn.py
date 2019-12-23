@@ -35,8 +35,6 @@ test_images = test_images.reshape((-1, 784))
 print(train_images.shape) #60,000 Rows, 784 Rows
 print(test_images.shape) #10,000 Rows, 784 Rows
 
-
-
 #Build The Model 
 #With 3 Layers, 
 #2 Layers With 64 Neurons And The Relu Function,
