@@ -12,7 +12,7 @@ train_labels = mnist.train_labels() #Training Data - Labels
 test_images = mnist.test_images() #Test Data - Images
 test_labels = mnist.test_labels() #Test Data - Labels
 
-#Normalize The Imahes. Normalize The Pixel Values From [0, 255] 
+#Normalize The Images. Normalize The Pixel Values From [0, 255] 
 #To [-0.5, 0.5] To Make Our Network Easier To Train
 train_images = (train_images/255) - 0.5
 test_images = (test_images/255) - 0.5
@@ -54,7 +54,7 @@ model.evaluate(
     test_images,
      to_categorical(test_labels)
 )
-
+#Save
 #model.save_weights('Model.h5')
 
 #Predict On The First 15 Test Images
